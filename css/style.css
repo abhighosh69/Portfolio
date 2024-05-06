@@ -30,7 +30,7 @@
     --normal-font-size: 1em;
 
     /*=======Scroll bar colors=======*/
-    --scroll-bar-color: #c5cadf;
+    --scroll-bar-color: #c5d3df;
     --scroll-thumb-color: #70768a;
     --scrool-thum-hover-color: #454f6b;
 
@@ -82,9 +82,14 @@ header{
     transition: .6s ease;
 }
 
+header.sticky{
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: var(--box-shadow);
+}
+
 .nav-bar{
     position: relative;
-    height:calc(4rem+1rem);
+    height:5rem;
     max-width: 1250px;
     display:flex;
     justify-content: space-between;
@@ -93,6 +98,10 @@ header{
     margin-right: auto;
     padding:0 20px;
     transition: .6s ease;
+}
+
+header.sticky .nav-bar{
+    height: 3.5rem;
 }
 
 .nav-bar .logo{
