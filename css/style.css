@@ -34,7 +34,6 @@
     --scroll-thumb-color: #70768a;
     --scrool-thum-hover-color: #454f6b;
 
-
 }
 
 *{
@@ -69,7 +68,19 @@ li{
 
 
 /*=======Scroll bar=======*/
+::-webkit-scrollbar{
+    width: 10px;
+    background: var(--scroll-bar-color);
+}
 
+::-webkit-scrollbar-thumb{
+    background: var(--scroll-thumb-color);
+    border-radius: 4rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--scrool-thum-hover-color);
+}
 
 /*=======Header=======*/
 header{
