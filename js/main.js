@@ -4,7 +4,28 @@ window.addEventListener("scroll", function(){
     header.classList.toggle("sticky",window.scrollY > 0);
 });
 //Portfolio section - Modal
+    const projectModals = document.querySelectorAll(".projects-model");
+    const imgCards = document.querySelectorAll(".img-card");
+    const projectClosseBtns = document.querySelectorAll(".projects-close-btn");
     
+    var projectModal = function (modalClick) {
+        projectModals[modalClick].classList.add("active");
+    }
+    
+    imgCards.forEach((imgCard, i) => {
+        imgCard.addEventListener("click", () =>{
+            projectModal(i);
+        });
+    });
+
+    projectClosseBtns.forEach((projectClosseBtn) => {
+        projectClosseBtn.addEventListener("click", () =>{
+            projectModals.forEach((projectModalView) => {
+                projectModalView.classList.remove("active");
+            });
+        });
+    });
+
 //Our clients - Swiper
 
 //Website dark/light theme
