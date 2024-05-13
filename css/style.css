@@ -546,6 +546,12 @@ header.sticky .nav-bar{
     padding: 40px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
+    transform: translateY(30px);
+    transition: .5s ease; 
+}
+
+.projects-model.active .projects-model-body{
+    transform: translateY(0);
 }
 
 .projects-close-btn{
