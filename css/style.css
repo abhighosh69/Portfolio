@@ -539,14 +539,15 @@ header.sticky .nav-bar{
 }
 
 .projects-model-body{
+    text-align: center;
     position: relative;
     background: var(--modal-bg-color);
-    max-width: 600px;
+    max-width: 900px;
     margin: 20px;
-    padding: 40px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
-    transform: translateY(30px);
+    transform: translateY(20px);
     transition: .5s ease; 
 }
 
@@ -574,6 +575,49 @@ header.sticky .nav-bar{
     border-radius: 10px;
 }
 
+.content-container{
+    display: flex;
+    justify-content: center; /* Center-align flex items horizontally */
+    align-items: center; /* Center-align flex items vertically */
+    margin-top: 20px; /* Add spacing above content container */
+}
+
+.img-container {
+    flex: 0 0 50%; /* Take up half of the width within flex container */
+    padding-left: 20px; /* Add spacing to the left of the text */
+}
+
+
+.img-container img {
+    max-width: 200px; /* Set maximum width for the image */
+    height: auto; /* Maintain image aspect ratio */
+    margin-right: 20px; /* Add spacing between image and paragraph */
+}
+
+.img-container p {
+    flex: 1; /* Allow paragraph to grow and fill remaining space */
+    font-size: 14px; /* Adjust the font size of the paragraph */
+    line-height: 1.5; /* Set the line height for better readability */
+}
+
+.learn-more-btn{
+    display: inline-block;
+    background-color: var(--second-color);
+    font-size: var(--normal-font-size);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+    padding: 20px 30px;
+}
+
+.learn-more-btn:hover{
+    background: var(--hover-color);
+}
+
+.learn-more-btn i {
+    margin-left: 5px;
+}
 
 
 /*=======Get-in-touct=======*/
