@@ -61,7 +61,27 @@ li{
     list-style: none;
 }
 /*=======Scroll to top button=======*/
+.scrollToTop-btn{
+    z-index: 99999;
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    background: var(--second-color);
+    color: #fff;
+    font-size: var(--small-font-size);
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0;
+    transition: .5s ease;
+}
 
+.scrollToTop-btn.active{
+    right: 20px;
+    opacity: 1;
+    pointer-events: all;
+}
 
 /*=======Light/Dark theme button=======*/
 
@@ -128,6 +148,10 @@ header.sticky .nav-bar{
     color: var(--first-color);
     font-style: var(--normal-font-size);
     font-weight: 500;
+}
+
+.nav-items a.active{
+    color: var(--second-color);
 }
 
 .nav-items a:not(:last-child){
